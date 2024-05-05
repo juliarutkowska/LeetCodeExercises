@@ -1,18 +1,18 @@
 namespace LeetCode;
 
-    public class LengthOfLastWord 
+public class LengthOfLastWord 
+{
+    public int LengthOfLastWords(string s)
     {
-        public int LengthOfLastWords(string s)
-        {
-            s = s.Trim();
+        s = s.Trim();
     
-            if (string.IsNullOrEmpty(s))
-                return 0;
+        if (string.IsNullOrEmpty(s))
+            return 0;
     
-            var word = s.Split(' ');
+        var word = s.Split(' ');
     
-            var lastWord = word[word.Length - 1];
+        var lastWord = word[word.Length - 1];
     
-            return lastWord.Length;
-        }
+        return lastWord.Length;
     }
+}
